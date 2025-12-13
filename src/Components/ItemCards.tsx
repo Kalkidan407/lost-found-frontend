@@ -73,7 +73,15 @@ export default function ItemCard({
 
        
 
-        <button className="mt-3 w-full border-emerald-600  text-emerald-600 font-bold py-2 rounded-lg text-sm hover:bg-emerald-500 bg-emerald-700 text-white hover:text-white transition">
+        <button className="mt-3 
+                w-full border-emerald-600  
+                text-emerald-600 
+                font-bold py-2 rounded-lg
+                text-sm hover:bg-emerald-500
+                bg-emerald-700 text-white 
+                hover:text-white transition"
+           
+                >
           Take Ownership Quiz
         </button>
         <div className="text-sm text-gray-400 text-right">
