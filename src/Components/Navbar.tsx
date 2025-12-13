@@ -6,13 +6,13 @@ export default function Navbar() {
   return (
     <nav className="w-full border-b bg-white">
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
+     
         <Link href="/" className="text-xl font-bold text-emerald-600">
           Lost&Found
         </Link>
 
-        {/* Links */}
-        <div className="hidden md:flex items-center gap-6 text-sm font-semibold">
+       
+        <div className="hidden md:flex items-center gap-6 text-[16px] text-gray-500 font-semibold">
           <Link href="/" className="hover:text-emerald-600">
             Home
           </Link>
@@ -24,7 +24,6 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Auth buttons */}
         <div className="flex items-center gap-3">
           <Link
             href="/login"
