@@ -1,4 +1,4 @@
-import Navbar from "@/Components/Navbar";
+
 import ItemGrid from "@/Components/ItemGrid";
 import { Item } from "./types/item";
 import FilterSidebar from "@/Components/FilterSidebar";
