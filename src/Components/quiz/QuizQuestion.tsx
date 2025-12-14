@@ -30,7 +30,7 @@ export default function QuizQuestion({
             className={`border rounded-lg py-2 text-sm transition
               ${
                 selected === option
-                  ? "bg-black text-white"
+                  ? "bg-emerald-600 text-white"
                   : "bg-white hover:bg-gray-100"
               }`}
           >

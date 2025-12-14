@@ -3,8 +3,10 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { LocateFixed, LockKeyholeIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 type ItemCardProps = {
+  id: number;
   title: string;
   category: string;
   location: string;
@@ -15,6 +17,7 @@ type ItemCardProps = {
 };
 
 export default function ItemCard({
+  id,
   title,
   category,
   location,
@@ -23,6 +26,7 @@ export default function ItemCard({
   imageUrl,
   isVerified,
 }: ItemCardProps) {
+  const route = useRouter();
   return (
     <div className="bg-white rounded-xl shadow-sm border hover:shadow-md transition">
 
@@ -73,17 +77,20 @@ export default function ItemCard({
 
        
 
-        <button className="mt-3 
+        <button
+         onClick={() => route.push(`/quize/${id}`)}
+        className="mt-3 
                 w-full border-emerald-600  
-                text-emerald-600 
+                text-white 
                 font-bold py-2 rounded-lg
                 text-sm hover:bg-emerald-500
-                bg-emerald-700 text-white 
+                bg-emerald-700 
                 hover:text-white transition"
            
                 >
           Take Ownership Quiz
         </button>
+
         <div className="text-sm text-gray-400 text-right">
           {timeAgo}
         </div>

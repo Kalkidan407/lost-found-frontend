@@ -8,7 +8,7 @@ export default function QuizPage({
   params: { itemId: string };
 }) {
   return (
-    <div className="min-h-screen flex  bg-gray-50 p-4">
+    <div className="m-auto flex  p-6 justify-center ">
       <QuizCard itemId={params.itemId} />
     </div>
   );

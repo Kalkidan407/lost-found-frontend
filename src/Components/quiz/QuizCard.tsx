@@ -31,7 +31,7 @@ export default function QuizCard({ itemId }: { itemId: string }) {
 
   return (
 
-    <div className="w-full text-center   max-w-lg bg-white rounded-2xl shadow-lg p-2 ">
+    <div className="  items-center text-center  max-w-lg bg-white rounded-2xl shadow-lg p-6 mt-10 ">
 
       <h2 className="text-2xl font-semibold mb-2 ">
         Ownership Verification
@@ -54,7 +54,7 @@ export default function QuizCard({ itemId }: { itemId: string }) {
 
       <button
         onClick={handleSubmit}
-        className="mt-6 w-1/2  bg-black text-white py-3 rounded-full hover:opacity-90 transition"
+        className="mt-6 w-1/2  bg-emerald-600 text-white py-3 rounded-xl hover:opacity-90 transition"
       >
         Submit Answers
       </button>
